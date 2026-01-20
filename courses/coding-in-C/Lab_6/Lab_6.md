@@ -81,7 +81,6 @@ Start: 30.00 s End: 40.00 s
 
 ## Hints
 
-- Use loops to iterate over samples
 - Keep track of active intervals using a state variable
 - Start a detection interval when `signal[i]` changes from 0 → 1  
 - End the interval when it changes from 1 → 0
