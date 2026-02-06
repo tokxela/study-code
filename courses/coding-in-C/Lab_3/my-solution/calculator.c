@@ -45,7 +45,14 @@ short ask_for_operation() {
     while ((c = getchar()) != '\n' && c != EOF); // reading and cleaning the wrong input line    
 }
 
+bool check_invalid_numbers (short operation, float a, float b) {
+    if (operation == DIV) {
+        if (b == 0) 
+            return false;
+    }
+    return true;
+}
+
 int main () {
-    printf("%i",ask_for_operation());
     return 1;
 }
